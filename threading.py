@@ -20,3 +20,6 @@ class Thread:
 
     def run(self):
         self.target(*self.args, **self.kwargs)
+        
+    def allocate_lock(self):
+        return _thread.allocate_lock()
